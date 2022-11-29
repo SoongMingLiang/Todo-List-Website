@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Todo List
+        </h1>
+        <form id="new-task-form">
+            <input
+                type="text"
+                id="new-task-input"
+                placeholder="Type in whatever that you want to plan."
+                value="Do assignments"
+                title="Input box to enter task">
+            <input
+                type="submit"
+                id="new-task-submit"
+                value="Add task"
+                title="Press ENTER or click on this button to submit">
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tasks that you have planed</h2>
+            
+            <div id="tasks">
+                <div class="task">
+                    <div class="contents">
+                        <input
+                            type="text"
+                            class="text"
+                            value="A tasks that you have planned"
+                            readonly>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
