@@ -6,6 +6,9 @@
     --light: #EEE;
     --pink: #EC4899;
     --purple: #8B5CF6;
+    --lightblue: #87CEFA;
+    --blue: #4169E1;
+    --twitterblue: #1DA1F2;
 }
 
 *{
@@ -151,4 +154,106 @@ main{
     background-image: linear-gradient(to right, red, var(--pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darker);
+    margin: 0 auto 0 auto;
+    height: 620px;
+    width: 620px;
+    padding: 30px 40px;
+    border-radius: 30px;
+}
+
+.popup #close{
+    margin-left: auto;
+    font-size: 50px;
+    font-weight: bold;
+    width: 40px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--lightblue), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.popup #close:hover{
+    background-image: linear-gradient(to right, var(--blue), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+
+.popup #close:active{
+    background-image: linear-gradient(to right, var(--blue), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+
+.popup h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.popup li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.55rem;
+    text-align: justify;
+    text-justify: distribute;
+}
+
+.popup #sign-in{
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(to right, var(--twitterblue), var(--purple));
+    border-radius: 30px;
+    width: 150px;
+    margin: 0 auto auto auto;
+}
+
+.popup #sign-in:hover{
+    background-image: linear-gradient(to right, var(--purple), var(--twitterblue));
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.popup #sign-in:active{
+    background-image: linear-gradient(to right, var(--purple), var(--twitterblue));
+    transition: 0.7s;
+    opacity: 0.6;
+}
+
+.popup #sign-up{
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(to right, var(--purple), red);
+    border-radius: 30px;
+    width: 150px;
+    margin: 0 auto 0 auto;
+}
+
+.popup #sign-up:hover{
+    transition: 0.7s;
+    background-image: linear-gradient(to right, red, var(--purple));
+    opacity: 0.8;
+}
+
+.popup #sign-up:active{
+    transition: 0.7s;
+    background-image: linear-gradient(to right, red, var(--purple));
+    opacity: 0.6;
 }
