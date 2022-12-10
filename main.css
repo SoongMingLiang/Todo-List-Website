@@ -157,10 +157,14 @@ main{
 }
 
 .popup{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     background-color: var(--darker);
-    margin: 0 auto 0 auto;
     height: 620px;
     width: 620px;
     padding: 30px 40px;
