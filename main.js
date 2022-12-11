@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+    setTimeout(openPopup, 1000);
     const form = document.querySelector("#new-task-form");
     const input = document.querySelector("#new-task-input");
     const task = document.querySelector("#tasks");
@@ -62,3 +63,17 @@ window.addEventListener("load", () => {
         });
     });
 });
+
+function openPopup(){
+    let login = document.getElementById("login");
+    login.classList.add("popup-open");
+    const form = document.querySelector("#new-task-form");
+    form.style.setProperty("pointer-events", "none");
+}
+
+function closePopup(){
+    let login = document.getElementById("login");
+    login.classList.remove("popup-open");
+    const form = document.querySelector("#new-task-form");
+    form.style.removeProperty("pointer-events");
+}
