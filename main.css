@@ -198,7 +198,8 @@ main{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.8;
-    transition: 0.7s;
+    transform: scale(1.25);
+    transition: all 0.7s;
 }
 
 .popup #close:active{
@@ -236,7 +237,8 @@ main{
 
 .popup #sign-in:hover{
     background-image: linear-gradient(to right, var(--purple), var(--twitterblue));
-    transition: 0.7s;
+    transform: scale(1.25);
+    transition: all 0.7s;
     opacity: 0.8;
 }
 
@@ -259,7 +261,8 @@ main{
 }
 
 .popup #sign-up:hover{
-    transition: 0.7s;
+    transform: scale(1.25);
+    transition: all 0.7s;
     background-image: linear-gradient(to right, red, var(--purple));
     opacity: 0.8;
 }
